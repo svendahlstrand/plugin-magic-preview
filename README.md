@@ -28,9 +28,9 @@ Hello, fellow microblogger! 👋 This plug-in is available in the official direc
 
 > ⚠️ **IMPORTANT:** Read this before installing!!1!
 >
-> Magic Preview adds a special magic post to your blog's archive. It's needed for the preview functionality to work as intended. The magic post:
+> Magic Preview adds a special post to your blog's archive. It's needed for the preview functionality to work as intended. The post:
 >
-> * lives here `https://your-blog.example.com/magic/preview/`
+> * lives here: `https://your-blog.example.com/magic/preview/`
 > * shows as the first post in your archive (published 1969)
 > * is included in your RSS feed (if you have less than 25 posts)
 > * appears on your Micro.blog timeline (if you have less than 25 posts)
@@ -47,7 +47,10 @@ Hello, fellow microblogger! 👋 This plug-in is available in the official direc
 After installing the plug-in, you should have a new page at `/magic/` within a few minutes. So, for example, if your blog is at https://example.com/, the address is https://example.com/magic/.
 
 1. Go to that page.
-2. Start typing and hit 🔍 *Preview* when you're ready. Have fun!
+2. Start typing and hit 🔍 *Preview* when you're ready.
+3. The preview opens in a new tab. Detach it to a separate window and put it side-by-side with the editor to see it update as you type. Have fun!
+
+**Pro tip:** [Split View](https://support.apple.com/en-us/HT204948) in macOS works great with Magic Preview. The browser [Arc](https://arc.net) has a similar feature and your browser or operating system might have one as well.
 
 ### Having troubles?
 
