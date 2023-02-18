@@ -28,12 +28,12 @@ Hello, fellow microblogger! 👋 This plug-in is available in the official direc
 
 > ⚠️ **IMPORTANT:** Read this before installing!!1!
 >
-> This plug-in will add a special magic post to your blog's archive. This is needed for the preview functionality to work as intended. This magic post will:
+> Magic Preview adds a special magic post to your blog's archive. It's needed for the preview functionality to work as intended. The magic post:
 >
-> * be located at `https://your-blog.example.com/magic/preview/`
-> * show as the first post in your archive (published 1969)
-> * be included in your RSS feed (if you have less than 25 posts)
-> * show up on your Micro.blog timeline (if you have less than 25 posts)
+> * lives here `https://your-blog.example.com/magic/preview/`
+> * shows as the first post in your archive (published 1969)
+> * is included in your RSS feed (if you have less than 25 posts)
+> * appears on your Micro.blog timeline (if you have less than 25 posts)
 >
 > If you don't like the above: don't install this plug-in on your main blog. Use [your free test blog](https://www.manton.org/2019/09/04/microblog-test-blogs.html) instead.
 
