@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Editor</title>
+    <style>
+      html,
+      body,
+      main {
+        height: 100%;
+        margin: 0;
+      }
+
+      body {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+        font-size: 18px;
+      }
+
+      main {
+        max-width: 40rem;
+        margin: 0 auto;
+      }
+
+      nav {
+        position: fixed;
+        left: 50%;
+        bottom: 1rem;
+        transform: translateX(-50%);
+        background: white;
+        border: solid 0.2rem black;
+        border-radius: 0.3rem;
+        padding: 0.6rem;
+        white-space: nowrap;
+      }
+
+      nav a {
+        font-weight: bold;
+        text-decoration: none;
+        display: inline-block;
+        margin: 0 0.6rem;
+        color: #0000ee;
+      }
+
+      nav a:hover,
+      nav a:focus {
+        text-decoration: underline;
+      }
+
+      nav a:visited {
+        color: #0000ee;
+      }
+
+      input {
+        box-sizing: border-box;
+        width: 100%;
+        font-family: inherit;
+        font-size: 1.6rem;
+        padding: 1rem;
+        border: none;
+        outline: unset;
+        height: 4rem;
+      }
+
+      .autogrow {
+        display: grid;
+      }
+
+      .autogrow::after {
+        content: attr(data-replicated-value) " ";
+        white-space: pre-wrap;
+        visibility: hidden;
+      }
+
+      .autogrow > textarea {
+        resize: none;
+      }
+
+      .autogrow > textarea,
+      .autogrow::after {
+        font-family: inherit;
+        font-size: inherit;
+        padding: 1rem;
+        border: none;
+        outline: unset;
+        grid-area: 1 / 1 / 2 / 2;
+      }
+    </style>
+  </head>
+
+  <body>
+    <main>
+      <input id="title" placeholder="Optional Title">
+
+      <div class="autogrow">
+        <textarea
+          id="body"
+          placeholder="Just type out your blog post as you usully do. Markdown is fine. HTML as well.
+
+  💾 Don't worry everything you type here is automaticly saved. You can close the tab and come back later."
+          onInput="this.parentNode.setAttribute('data-replicated-value', this.value  || this.placeholder)"
+          onload="this.parentNode.setAttribute('data-replicated-value', this.value || this.placeholder)">
+        </textarea>
+      </div>
+    </main>
+
+    <nav>
+      <a href="microblog://" id="mb">📮 Post…</a>
+      <a href="/magic/preview/" target="_blank">🔍 Preview</a>
+    </nav>
+
+    <script>
+      const title = document.getElementById('title');
+      const body = document.getElementById('body');
+      const draftInMBLink = document.getElementById('mb');
+
+      const resize = textarea => {
+        textarea.parentNode.setAttribute('data-replicated-value', textarea.value || textarea.placeholder);
+      };
+
+      title.value = localStorage.getItem('title');
+      body.value = localStorage.getItem('body');
+
+      body.addEventListener('input', event => {
+        localStorage.setItem('body', body.value);
+        resize(body);
+      });
+
+      title.addEventListener('input', event => {
+        localStorage.setItem('title', title.value);
+      });
+
+      draftInMBLink.addEventListener('click', event => {
+        event.preventDefault();
+        window.location = `microblog://post?text=${encodeURIComponent(localStorage.getItem('body') || '')}`;
+      });
+
+      resize(body);
+    </script>
+  </body>
+</html>
