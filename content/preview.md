@@ -2,7 +2,7 @@
 type: "post"
 title: "Magic Preview"
 url: "/magic/preview/"
-date: "1969-06-21T02:56:00+00:00"
+date: "1991-08-06T13:37:00+00:00"
 ---
 
 <div id="html-preview">
