@@ -31,7 +31,7 @@ Hello, fellow microblogger! 👋 This plug-in is available in the official direc
 > Magic Preview adds a special post to your blog's archive. It's needed for the preview functionality to work as intended. The post:
 >
 > * lives here: `https://your-blog.example.com/magic/preview/`
-> * shows as the first post in your archive (published 1969)
+> * probably shows as the first post in your archive (published 1991)
 > * is included in your RSS feed (if you have less than 25 posts)
 > * appears on your Micro.blog timeline (if you have less than 25 posts)
 >
