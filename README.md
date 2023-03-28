@@ -1,6 +1,6 @@
 # 🦄 Magic Preview
 
-Preview your Micro.blog posts. Live, like magic! ⚠️ **IMPORTANT:** read notice below before installing…
+Preview your Micro.blog posts. Live, like magic!
 
 ![](https://raw.githubusercontent.com/svendahlstrand/plugin-magic-preview/main/docs/screenshot.gif)
 
@@ -25,17 +25,6 @@ Hey! It's me, Sven. Magic Preview and my other plug-ins are passion projects rel
 Hello, fellow microblogger! 👋 This plug-in is available in the official directory. It's easy to install, but be aware that it's early in development. So bugs and weird things will happen. 😅
 
 ### Install the plug-in
-
-> ⚠️ **IMPORTANT:** Read this before installing!!1!
->
-> Magic Preview adds a special post to your blog's archive. It's needed for the preview functionality to work as intended. The post:
->
-> * lives here: `https://your-blog.example.com/magic/preview/`
-> * probably shows as the first post in your archive (published 1991)
-> * is included in your RSS feed (if you have less than 25 posts)
-> * appears on your Micro.blog timeline (if you have less than 25 posts)
->
-> If you don't like the above: don't install this plug-in on your main blog. Use [your free test blog](https://www.manton.org/2019/09/04/microblog-test-blogs.html) instead.
 
 1. Find [Magic Preview in the plug-in directory](https://micro.blog/account/plugins/view/89).
 2. Choose the site you want to install the plug-in to.

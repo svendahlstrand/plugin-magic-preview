@@ -1,5 +1,6 @@
 ---
-type: "post"
+type: "magicpost"
+layout: "post"
 title: "Magic Preview"
 url: "/magic/preview/"
 date: "1991-08-06T13:37:00+00:00"
